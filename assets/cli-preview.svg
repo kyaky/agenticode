@@ -1,0 +1,118 @@
+<svg width="820" height="620" xmlns="http://www.w3.org/2000/svg" font-family="'SF Mono','Cascadia Code','Fira Code',monospace" font-size="12.5">
+  <!-- Terminal window -->
+  <rect width="820" height="620" rx="10" fill="#0f1923"/>
+  <!-- Title bar -->
+  <rect width="820" height="36" rx="10" fill="#152233"/>
+  <rect y="26" width="820" height="10" fill="#152233"/>
+  <circle cx="20" cy="18" r="6" fill="#ff6b6b"/>
+  <circle cx="40" cy="18" r="6" fill="#ffd966"/>
+  <circle cx="60" cy="18" r="6" fill="#66d9a0"/>
+  <text x="410" y="22" fill="#4da6ff" text-anchor="middle" font-size="12" font-weight="600">AgentiCode</text>
+
+  <g transform="translate(18, 52)">
+    <!-- Prompt line -->
+    <text y="0" fill="#4da6ff" font-weight="bold">agenticode</text>
+    <text y="0" x="88" fill="#56d4c8">~/project</text>
+    <text y="0" x="158" fill="#2a3f55">(main)</text>
+    <text y="0" x="198" fill="#4da6ff">$</text>
+
+    <!-- User input -->
+    <text y="22" fill="#e0e8f0">> Fix the auth session bug, add tests, and deploy</text>
+
+    <!-- Provider info -->
+    <text y="50" fill="#2a3f55">model:</text>
+    <text y="50" x="48" fill="#56d4c8">groq/llama-3.3-70b</text>
+    <text y="50" x="200" fill="#2a3f55">|</text>
+    <text y="50" x="210" fill="#56d4c8">110+ providers via models.dev</text>
+
+    <!-- Separator -->
+    <line x1="0" y1="64" x2="784" y2="64" stroke="#1c2e42" stroke-width="1"/>
+
+    <!-- Coordinator -->
+    <text y="82" fill="#4da6ff" font-weight="bold">coordinator</text>
+    <text y="82" x="95" fill="#8ea4b8">Dispatching 3 parallel workers...</text>
+
+    <!-- Workers -->
+    <text y="106" fill="#56d4c8">  [researcher]</text>
+    <text y="106" x="130" fill="#66d9a0">completed</text>
+    <text y="106" x="205" fill="#8ea4b8">Found null pointer at src/auth/validate.ts:42</text>
+
+    <text y="124" fill="#b388ff">  [test-runner]</text>
+    <text y="124" x="130" fill="#66d9a0">completed</text>
+    <text y="124" x="205" fill="#8ea4b8">2 tests failing — session expiry not handled</text>
+
+    <text y="142" fill="#ffd966">  [implementer]</text>
+    <text y="142" x="130" fill="#4da6ff">working...</text>
+    <text y="142" x="205" fill="#8ea4b8">Adding null check + session refresh logic</text>
+
+    <!-- Separator -->
+    <line x1="0" y1="158" x2="784" y2="158" stroke="#1c2e42" stroke-width="1"/>
+
+    <!-- @-mentions -->
+    <text y="176" fill="#4da6ff">  context</text>
+    <text y="176" x="65" fill="#8ea4b8">@file src/auth/validate.ts  @tree src/auth/</text>
+
+    <!-- Memory -->
+    <text y="196" fill="#4da6ff">  memory</text>
+    <text y="196" x="60" fill="#8ea4b8">loaded 4 memories for current project</text>
+    <text y="212" fill="#2a3f55">    -</text>
+    <text y="212" x="20" fill="#8ea4b8">[User] senior backend dev, prefers real DB tests</text>
+    <text y="228" fill="#2a3f55">    -</text>
+    <text y="228" x="20" fill="#8ea4b8">[Feedback] never mock the database</text>
+    <text y="244" fill="#2a3f55">    -</text>
+    <text y="244" x="20" fill="#8ea4b8">[Project] auth rewrite for compliance, freeze Mar 5</text>
+    <text y="260" fill="#2a3f55">    -</text>
+    <text y="260" x="20" fill="#8ea4b8">[ECAP] PowerShell rm -Recurse needs -Force on Windows</text>
+
+    <!-- Separator -->
+    <line x1="0" y1="276" x2="784" y2="276" stroke="#1c2e42" stroke-width="1"/>
+
+    <!-- Advisor -->
+    <text y="294" fill="#66d9a0">  advisor</text>
+    <text y="294" x="60" fill="#8ea4b8">reviewing changes...</text>
+    <text y="310" fill="#66d9a0">    APPROVE</text>
+    <text y="310" x="72" fill="#8ea4b8">null check at validate.ts:42 — correct and safe</text>
+    <text y="326" fill="#ffd966">    WARN</text>
+    <text y="326" x="55" fill="#8ea4b8">session refresh should handle concurrent requests</text>
+
+    <!-- Separator -->
+    <line x1="0" y1="342" x2="784" y2="342" stroke="#1c2e42" stroke-width="1"/>
+
+    <!-- Auto-fix -->
+    <text y="360" fill="#4da6ff">  auto-test</text>
+    <text y="360" x="78" fill="#66d9a0">bun test</text>
+    <text y="360" x="135" fill="#8ea4b8">8/8 passing</text>
+    <text y="376" fill="#4da6ff">  auto-commit</text>
+    <text y="376" x="92" fill="#8ea4b8">agenticode: fix session null pointer + add tests</text>
+
+    <!-- Separator -->
+    <line x1="0" y1="392" x2="784" y2="392" stroke="#1c2e42" stroke-width="1"/>
+
+    <!-- Checkpoint -->
+    <text y="410" fill="#56d4c8">  checkpoint</text>
+    <text y="410" x="90" fill="#8ea4b8">cp-3 saved (3 files modified, git hash: a1b2c3d)</text>
+
+    <!-- Buddy -->
+    <text y="440" fill="#7bbfff" font-size="10.5">   \^^^/</text>
+    <text y="452" fill="#7bbfff" font-size="10.5">   (\__/)</text>
+    <text y="464" fill="#7bbfff" font-size="10.5">  ( o  o )</text>
+    <text y="476" fill="#7bbfff" font-size="10.5"> =(  ..  )=</text>
+    <text y="488" fill="#7bbfff" font-size="10.5">  (")__(")   Pippin says: nice fix!</text>
+
+    <!-- Status bar -->
+    <rect y="504" width="784" height="26" rx="4" fill="#152233"/>
+    <text y="521" x="8" fill="#4da6ff" font-size="11" font-weight="600">build</text>
+    <text y="521" x="42" fill="#2a3f55" font-size="11">|</text>
+    <text y="521" x="52" fill="#8ea4b8" font-size="11">3 workers</text>
+    <text y="521" x="120" fill="#2a3f55" font-size="11">|</text>
+    <text y="521" x="130" fill="#66d9a0" font-size="11">memory: 4</text>
+    <text y="521" x="200" fill="#2a3f55" font-size="11">|</text>
+    <text y="521" x="210" fill="#56d4c8" font-size="11">ecap: 12</text>
+    <text y="521" x="280" fill="#2a3f55" font-size="11">|</text>
+    <text y="521" x="290" fill="#8ea4b8" font-size="11">tokens: 45.2K/128K (35%)</text>
+    <text y="521" x="490" fill="#2a3f55" font-size="11">|</text>
+    <text y="521" x="500" fill="#ffd966" font-size="11">$0.0042</text>
+    <text y="521" x="620" fill="#2a3f55" font-size="11">|</text>
+    <text y="521" x="630" fill="#8ea4b8" font-size="11">groq/llama-3.3-70b</text>
+  </g>
+</svg>
